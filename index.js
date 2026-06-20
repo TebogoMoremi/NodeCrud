@@ -7,6 +7,7 @@ const PORT = 5000; //initializing the port
 //initializing the bodyParser middleware
 app.use(bodyParser.json());
 app.get("/",(req,res)=>{
+    console.log("Hello from home page of node CRUD");
     res.send("Hello from home page of node CRUD");
 }
 );
