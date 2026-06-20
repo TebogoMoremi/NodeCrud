@@ -6,5 +6,9 @@ const PORT = 5000; //initializing the port
 
 //initializing the bodyParser middleware
 app.use(bodyParser.json());
+app.get("/",(req,res)=>{
+    res.send("Hello from home page of node CRUD");
+}
+);
 //application listen to upcoming requests
 app.listen(PORT,()=>console.log(`server running on port:http://localhost:${PORT}`));
